@@ -47,14 +47,14 @@ module.exports = {
              embed.setDescription(`**You have alrady voted.** \n\n> You can vote after **${remainingTimeHours}** hour, **${remainingTimeMinutes}** minute.`)
             embed.setTitle(`Voting For Counting Bot`)
             embed.setTimestamp()
-            embed.setColor(red)
+            embed.setColor('#00FF00')
             await interaction.reply({ embeds: [embed] });
         } else {
             
             embed.setDescription(`**Your vote is available.** \n\n> Vote now by click **[here](https://top.gg/bot/1106236979147964426/vote)**!`)
             embed.setTitle(`Voting For Counting Bot`)
             embed.setTimestamp()
-            embed.setColor(client.color)
+            embed.setColor('#00FF00')
             await interaction.reply({ embeds: [embed] });
         }
     },
