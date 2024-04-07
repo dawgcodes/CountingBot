@@ -27,7 +27,7 @@ module.exports = {
       guildData.numOnly = option;
       guildData.save();
 
-      await interaction.reply({ embeds: [embed], ephemeral: true })
+      await interaction.reply({ embeds: [countOnlyEmbed], ephemeral: true }) // Changed 'embed' to 'countOnlyEmbed'
     }
   }
 }
